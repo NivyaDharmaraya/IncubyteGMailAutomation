@@ -19,15 +19,10 @@ Scenario: Check if user is able to login and send email from gmail
       
 #This is negative login testcase
 Scenario: Check if user is unable to login with invalid credentials
-    Given The user has launched gmail application in the browser
-    When The user enters invalid emailid and password
+#    Given The user has launched gmail application in the browser
+    When The user enters invalid emailid 
     Then Clicks on signin button to login to gmail
-    And Check if user is unable able to login
+    And Check if user is unable to login
     And Check if the user is thrown appropriate error message
         
-
-#  @tag2
-#  Scenario Outline: Title of your scenario outline
-#    Given I want to write a step with <name>
-#    When I check for the <value> in step
-#    Then I verify the <status> in step      
+  
